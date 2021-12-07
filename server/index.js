@@ -148,7 +148,7 @@ app.get("/fit-dash", async (req, res) => {
     }
 });
 
-app.post("/fit-dash.html", function(req, res){
+app.post("./fit-dash.html", function(req, res){
 
 })
 
@@ -162,7 +162,7 @@ app.get("/slots", (req, res) => {
     //http://www.supersaas.com/schedule/elitefit/sessions
     // link to session booking
     // slot file goes here. Use the sass
-    res.sendFile()
+    res.sendFile(__dirname + "./slots.html")
 });
 
 // port config
