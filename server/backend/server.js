@@ -11,8 +11,7 @@ const { google } = require("googleapis");
 const request = require("request");
 const urlParse = require("url-parse");
 const queryParse = require("query-string");
-
-require("dotenv").config({ path: "./config.env" });
+require("dotenv").config({ path: "././config.env" });
 const port = process.env.PORT || 5000;
 
 // app.use(require(__dirname +"/routes/record"));
@@ -34,7 +33,7 @@ app.use(bodyParser.json());
 // app.use(chimp)
 
 
-var client = new Client({accountName: 'elitefit', api_key: 'xxOPAY4ssFR4UgSmO6_bkw'});
+// var client = new Client({accountName: 'elitefit', api_key: 'xxOPAY4ssFR4UgSmO6_bkw'});
 
 // backend for bmi calculation
 app.get("/bmi", function (req, res) {
